@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+    HTML must have 4 tags:
+    DOCTYPE
+    html
+    head
+    body
+ -->
+
+<head>
+
+    <!-- 
+        META TAGS 
+        Can be used for character sets, to control keywords, 
+        to help control how webpages are viewed across devices, 
+        and to set translation settings.
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="keywords" content="music, store, instruments" />
+    <meta name="description" content="Sample music website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+
+
+    <title>The Music Store</title>
+
+    <!--
+        INTERNAL STYLE SHEETS take precedence over external style sheets for the same tag and property
+
+        Eg.:
+        <style> p{color:maroon;} </style>   
+    
+        >> If the color set for the p tag on the css file is navy, 
+            maroon would take precedence in this case.
+
+        >> But INLINE STYLE SHEETS that can be added in the body section within the code, 
+            take precedence over INTERNAL STYLE SHEETS.
+    -->
+
+    <!-- 
+        LINK TAGS
+        Associated with external files and not hyperlink
+    -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+
+    <!-- 
+        NAV TAG:
+        A semantic tag that helps to use a spot in the HTML code 
+        the area on the page containing navigation links to other pages.
+    -->
+
+    <nav>
+        HOME | BOOKS | CONTACT US | <a href="page2.html"> SPOTLIGHT</a>
+    </nav>
+
+    <hr>
+
+    <!-- 
+        HEADER TAG >>> Is a semantic tag. 
+        Doesn't change the look of a webpage (unless it is formatted using a style sheet).
+        A semantic tag is used to help to organize the webpage. 
+    -->
+
+    <header>
+
+        <!-- 
+            HEADING TAGS:
+            HTML has six levels of headings with tags of h1 through h6.
+            h1 is the largest, while h6 is the smallest.
+         -->
+
+        <h2>
+            Welcome to
+            <h1>
+                <!-- SPAN TAG >>> Works with individual words and phrases -->
+                &gt;&gt; THE <span style="color:darkblue">MUSIC</span> STORE &lt;&lt;
+            </h1>
+        </h2>
+
+        <hr>
+
+    </header>
+    <!-- DIV TAG >>> (division tag) >>> Works with blocks of text -->
+
+    <!-- 
+        SECTION TAG:
+        A semantic tag that mark off sections on a web page. Helpful on longer pages.
+     -->
+
+    <section>
+
+        <!-- * TABLE * -->
+
+        <!-- 
+            TABLE TAGS:
+            th = table header row
+            tr = table rows
+            td = table definition // 2 td means 2 columns 
+            colspan
+            Below there is a 5 row 2 column table
+         -->
+
+        <table border="1">
+
+            <!-- 
+                CAPTION TAG:
+                Used on tables, caption tag allows to place a description 
+                in close proximity to a table.
+            -->
+            <caption> Current Summer Hours</caption>
+
+            <th colspan="2">
+                Hours of Operation
+            </th>
+            <tr>
+                <th>Days</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>M-F</td>
+                <td>10am to 6pm</td>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>9am to 6pm</td>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>11am to 5pm</td>
+            </tr>
+            <tr>
+                <td colspan="2"> Hours may vary on holidays</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- **** **** -->
+
+    <hr>
+
+    <!-- 
+        BOOKMARKS:
+        Used to link to a specific spot on a webpage.
+        Helpful for navigating within long webpages.
+    -->
+
+    <h2>
+        <a href="#godown">CLICK HERE TO GO TO THE BOTTOM OF THE PAGE</a>
+    </h2>
+
+
+
+    <section>
+
+        <hr>
+
+        <h3>We currently offer courses for the following instruments:</h3>
+
+        <ul style="list-style-type: square;">
+            <li>Guitar</li>
+            <li>Piano</li>
+            <li>Drums</li>
+        </ul>
+
+        <ol>
+            <li>Guitar</li>
+            <li>Piano</li>
+            <li>Drums</li>
+        </ol>
+
+        <ol style="list-style-type: upper-alpha">
+            <li>Guitar</li>
+            <li>Piano</li>
+            <li>Drums</li>
+        </ol>
+
+
+    </section>
+
+    <hr>
+
+    <h3>CLICK IN THE CIRCLE <br></h3>
+
+    <!-- 
+
+        MAP & AREA
+
+        The map tag defines an image map using one or more area tags.
+        That image map is then linked to an image, creating separate selectable areas on an image 
+        that act similarly to standard hyperlinks.
+
+        The link below generates the code and coordinates for the image map:
+        https://www.image-map.net/
+
+    -->
+
+    <img src="images/square.jpg" alt="blue square" width="400" height="400" usemap="#square_map" />
+
+    <map name="square_map">
+        <area shape="circle" coords="200,200,100" href="https://www.image-map.net/" alt="image map generator link"
+            target="_blank" />
+    </map>
+
+    <hr>
+
+
+    <!-- 
+        ARTICLE TAG
+        A semantic tag used to mark off self-containing text
+        that can make up a story, or blog entry, or an article.
+     -->
+
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis posuere quam a fermentum.
+            Mauris sollicitudin aliquam metus vel cursus. Pellentesque vestibulum iaculis magna, sed viverra magna
+            blandit quis.
+            Morbi ac commodo libero. Aliquam vitae quam sit amet felis malesuada pretium sit amet vel purus.
+            In at mauris congue, volutpat quam at, mattis erat. Vestibulum ante ipsum primis in faucibus orci luctus et
+            ultrices posuere cubilia curae;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae pretium dolor, dignissim eleifend
+            eros.
+            Curabitur quis mauris nec magna fermentum porta. Morbi blandit sapien in tincidunt laoreet.
+            Mauris sit amet viverra enim. Nunc ornare metus sed augue euismod cursus.
+            Integer ut elit ut ex dapibus efficitur. Mauris vulputate luctus elit commodo vestibulum.
+        </p>
+
+        <p>
+            Vestibulum ultrices quam et neque semper, vitae sagittis felis aliquet.
+            Morbi consequat, nibh ac finibus molestie, ligula urna molestie eros, eget maximus libero magna et risus.
+            Duis sit amet feugiat elit. Nunc sit amet gravida mi, eget imperdiet nunc.
+            Mauris ultricies erat feugiat mauris iaculis mattis. Donec condimentum, lorem et lobortis dapibus, velit
+            odio aliquam tellus,
+            quis tempor nulla massa eget mauris. Suspendisse eget dolor ac justo placerat congue in ac leo.
+            Pellentesque eget tellus ex. Curabitur luctus ullamcorper feugiat.
+        </p>
+
+        <!-- 
+        ASIDE TAG
+        Another semantic tag used to mark off a side story.
+        It can be related to the article, but that is not a must.
+        -->
+
+        <aside>
+            Aside note over here. <br> Testing aside tag.
+        </aside>
+
+        <p>
+            Cras at massa tempus, eleifend urna ut, bibendum dui.
+            Integer purus diam, feugiat vitae massa quis, dapibus aliquam neque.
+            Maecenas vitae est nunc. Curabitur dictum ullamcorper auctor.
+            Donec placerat pharetra turpis, vitae pulvinar tellus imperdiet nec.
+            Vivamus placerat rutrum massa, eget maximus leo bibendum eu. Nunc viverra tortor sit amet maximus
+            vestibulum.
+        </p>
+    </article>
+
+    <hr>
+
+    <!-- 
+        DETAILS TAG:
+        Text inside of a details tag can be hidden or shown at will.
+     -->
+    <details>
+
+        <!-- 
+            SUMMARY TAG:
+            The summary tag will sorround the line explaining what is in the details section.
+        -->
+        <summary> Show or hide these pictures! </summary>
+
+        <h5> IMAGE I </h5>
+
+        <!-- 
+            IMAGE LINKS:
+            Images are linked from a webpage to a stored location.
+            Thus, for any image you link, you should check and make sure the image links still work. 
+        -->
+
+        <img src="images/cover1.png" alt="Cover Picture 1" width="800px" />
+
+        <h5> IMAGE II </h5>
+
+        <!-- 
+            FIGURE TAG:
+            The figure tag is used to mark up an image in a webpage.
+            It can be used with with figcaption tag, 
+            which can be used to put a caption on an image and line up the caption with the image.
+        -->
+
+        <figure>
+            <img src="images/cover2.png" alt="Cover Picture 2" width="800px" />
+            <figcaption>figcaption tag being used here &LeftArrow;</figcaption>
+        </figure>
+
+    </details>
+
+    <hr>
+    <hr>
+
+    <!-- ****************** FORM ELEMENTS ****************** -->
+
+    <div>
+        <h1>FORM ELEMENTS</h1>
+
+        <!--  
+            ACTION and METHOD ATTRIBUTES:
+            Actions either reference webpages or scripts which process information, often to a database.
+            This is used for adding information to a database or retrieving information from a database,
+            as is the case to use a form to search on a search engine, for example.
+        -->
+
+        <form action="page2.html" method="post">
+            <!-- INPUT TAG -->
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" /> <br>
+            <!-- 
+                It is important to name any input field in case we need to refer to it 
+                to a script later or, in some cases, have this match up with a database field when processed.  
+            -->
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" /> <br>
+            <!-- 
+                The ID is needed because the label uses the ID, so if somebody clicks on this label it actually goes to this field.
+            -->
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" /> <br>
+            <!-- 
+                When we put "email" as the input type, it forces whoever fills this out 
+                to have an email address in this form. 
+            -->
+
+            <!-- SELECT TAG -->
+            <p>How did you hear about us?</p>
+            <select name="found" id="found">
+                <!-- 
+                    When the options are created it is needed to add a value attribute to each option, 
+                    because if this is going to be written to a database of any kind or processed in a script,
+                    it won't check the labels, instead, it's going to use the value.  
+                -->
+                <option value="TV">TV</option>
+                <option value="Web" selected>Web</option>
+                <!--selected makes "Web" the default option -->
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- TEXT AREA -->
+            <p>Add comments below</p>
+            <textarea rows="6" cols="50" maxlength="255"> </textarea>
+
+            <!-- 
+                BUTTON TAG
+                The type of tag to use for a button depends on what you want the button to do.
+                If you're submitting a form or resetting it, you will want to use the input tag 
+                and set the type to a button. 
+                If you want a different change, such as changing and image, you will want to use 
+                the button tag.
+             -->
+            <button name="showimage" onclick="">Show Image</button>
+            <input type="submit" name="submitform" value="Send it" />
+
+            <!--  
+                OUTPUT TAG
+                It allows us to take what's in a form and do an instant calculation 
+                depending upon what is being input in a form.
+                Adding output to a form is a two-step process:
+                    1st: it is needed to tell the form what to do as data is being input 
+                    into the form. -> oninput="city.value = city.value + ' ' + state.value"
+                    2nd: Add the output tag.
+
+            -->
+
+        </form>
+
+        <form action="page2.html" oninput="location.value = city.value + ' - ' + state.value">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" /> <br>
+
+            <label for="state">State</label>
+            <input type="text" name="state" id="state" /> <br>
+
+            <output name="location"></output> <br>
+
+            <p>What is you favorite music genre?</p>
+            <select name="mg" id="mg">
+
+                <!-- 
+                    OPTION TAG -> OPTGROUP 
+                    Option Groups make options more readable.
+                -->
+
+                <optgroup label="rock">
+                    <option value="indie">Indie</option>
+                    <option value="punk">Punk</option>
+                    <option value="Grunge">Grunge</option>
+                </optgroup>
+                <optgroup label="others">
+                    <option value="pop">Pop</option>
+                    <option value="techno">Techno</option>
+                    <option value="classic">Classic</option>
+                </optgroup>
+
+            </select>
+
+            <!-- 
+                DATALIST TAG:
+                It makes appear list of possibilities when the user types information into a form field.
+                It is done through creating a pre-populated list using the datalist tag.
+            -->
+
+            <p>What instruments are you the most interested in learning?</p>
+            <input list="instruments" name="instruments" />
+            <!-- The DATALIST ID below has to match up to the name defined in the input tag above. -->
+            <datalist id="instruments">
+                <option value="guitar"></option>
+                <option value="piano"></option>
+                <option value="drums"></option>
+                <option value="bass"></option>
+            </datalist>
+
+            <!--  
+                FIELDSET TAGS:
+                It allows us to to group fields on forms to make a form a little easier to read.
+
+                To cover the fieldset topic it is needed to cover two tags:
+                1 - FIELDSET:
+                Defnes a box around a set of fields.
+                2 - LEGEND: 
+                Defines a name for a fieldset.
+            -->
+
+            <form action="page2.html" method="post">
+                
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" /> <br>
+                
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" /> <br>
+                
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" /> <br>
+
+
+
+        </form>
+
+
+    </div>
+
+    <hr>
+
+
+
+    <hr>
+
+    <!-- 
+        FOOTER TAG
+        The footer section holds what could be consistent at the bottom of each page
+        As with other semantic tags this is just helping who develop these webpages 
+        to have clarity on the parts of the page, unless we format these using style sheet.
+     -->
+
+    <footer>
+        lorem@impsum.com <br>
+        12 Lorem Street, Impsum Town <br>
+        The MUSIC store &copy;
+        <br> <br>
+
+        <!-- 
+            TARGETS:
+            Can control how a webpage loads once a link has been clicked.
+            To keep people on the website as long as possible, 
+            it is needed to set the target of a hyperlink to open in a new window/tab 
+         -->
+
+        <a href="https://www.google.com" target="_blank">LINK THAT OPENS ON A NEW TAB/WINDOW</a>
+
+        <!-- BOOKMARK ON THE LINE BELOW -->
+        <a name="godown"></a>
+
+    </footer>
+
+    <!-- Script Test  -->
+    <script language="JavaScript">
+        alert('This Browser supports Javascript')
+    </script>
+
+    <noscript>
+        THIS BROWSER DOES NOT SUPPORT JAVASCRIPT
+    </noscript>
+
+</body>
+
+</html>
+
+<!-- 
+    EXTRA NOTES:
+
+    ***LINKS***
+        RELATIVE LINK:
+        <a href="page2.html"> SPOTLIGHT</a>
+        The link after href works because both files (index and page2) are in the same folder.
+
+        ABSOLUTE LINK:
+        <a href="https://www.google.com" target="_blank">CONTACT US</a>
+        The link after href is external and needs the complete address.
+    *** *** ***
+
+    *** FOLDER HIERARCHY NAVIGATION ***
+        TO NAVIGATE UP A FOLDER PATH:
+        <a href="../index.html"> INDEX </a>
+        The file is in a folder above the current folder
+        Two dots and slash to navigate up a folder path.
+        
+        TO NAVIGATE DOWN A FOLDER PATH:
+        src="images/cover2.png"
+        The image is in a folder below the current folder. 
+        To navigate down two folders, use a slash "/" for each level.
+    *** *************************** ***
+
+    *** FORM SUBMISSIONS***
+        The most common submission methods and how they operate:
+        GET:  
+        A request to retrieve something, like an image or webpage.
+        With the get method, user attributes will appear in the URL.
+
+        POST
+        A request to take the submitted data and modify data on the server as a result of user input.
+        An example would be a form post changing existing information.
+
+        PUT
+        A request to take submitted data and insert it into a database.
+
+        DELETE
+        A request to remove information from a database.
+    *** *************** ***
+
+    *** ACCESSIBILITY ***
+        Two ways we can do it are through adding an access key, and a tab index. 
+    *** ************* ***
+
+    *** INPUT TYPES AND RESTRICTIONS ***
+        There are few different ways in which we can allow users to input information on a form.
+        Each input is defined either through a tag or a combination of a tag and attribute.
+        There are a number of input methods, here is some of them:
+
+            _______________________________________________________________________________________
+
+            INPUT TAG  
+            Has many attributes:
+                TEXT is for a single line field.
+                EMAIL is for an email address.
+                CHECKBOX is for a field which users can check or leave unchecked.
+                SUBMIT is a submit button
+                BUTTON can be a normal button or a submit button
+                LIST is a pre-populated data list which is applied to help users automatically complete a form field.
+            ___
+
+            SELECT TAG
+            Is used to generate a drop-down list
+                OPTION is a value that a user can select from a drop-down list.
+            ___
+
+            TEXTAREA TAG
+            Is used for entering multiple lines of text
+            _______________________________________________________________________________________
+
+        When building input fields, a best practice is to add a label tag prior to the input field.
+        This allows a user to click on the label, the text next to the field name, and have the cursor move into the accompanying field.
+
+        It is important to name any input field in case we need to refer to it to a script later or, in some cases, 
+        have this match up with a database field when processed. 
+    *** **************************** ***
+
+    *** THE SIGNIFICANCE OF LABELS ***
+    - Whithout the label tag, the user would have to click directly in the form field.
+    - This may sound insignificant, but consider how many users today are on mobile devices and smaller screens.
+    - Most studies estimate that 50% or more of all internet traffic is from mobile devices.
+    - The label tag also improves the experience for users utilizing screen readers.
+    - When a user focuses on a form field that has a label, the screen reader will use the associated label tag to read the name of field out loud.
+    
+    For these reasons and for ACCESSIBILITY, input tags should almost ALWAYS be accompanied by a label tag.
+    *** ************************** ***
+
+
+
+    
+-->
