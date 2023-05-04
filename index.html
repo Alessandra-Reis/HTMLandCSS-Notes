@@ -426,6 +426,8 @@
                 <option value="drums"></option>
                 <option value="bass"></option>
             </datalist>
+            
+            <h3> FIELDSET AREA </h3>
 
             <!--  
                 FIELDSET TAGS:
@@ -439,19 +441,54 @@
             -->
 
             <form action="page2.html" method="post">
-                
-                <label for="firstname">First Name</label>
-                <input type="text" name="firstname" id="firstname" /> <br>
-                
-                <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" id="lastname" /> <br>
-                
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" /> <br>
+
+                <fieldset>
+                    <legend>Personal</legend>
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" /> <br>
+
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" /> <br>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" /> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Questions</legend>
+                    
 
 
+                    <p>What is you favorite music genre?</p>
+            <select name="mg" id="mg">
+               
+                <optgroup label="rock">
+                    <option value="indie">Indie</option>
+                    <option value="punk">Punk</option>
+                    <option value="Grunge">Grunge</option>
+                </optgroup>
+                <optgroup label="others">
+                    <option value="pop">Pop</option>
+                    <option value="techno">Techno</option>
+                    <option value="classic">Classic</option>
+                </optgroup>
 
-        </form>
+            </select>
+
+            <p>What instruments are you the most interested in learning?</p>
+            <input list="instruments" name="instruments" />
+            
+            <datalist id="instruments">
+                <option value="guitar"></option>
+                <option value="piano"></option>
+                <option value="drums"></option>
+                <option value="bass"></option>
+            </datalist>
+
+                </fieldset>
+
+
+            </form>
 
 
     </div>
@@ -505,7 +542,10 @@
 <!-- 
     EXTRA NOTES:
 
+    *** *** ***
     ***LINKS***
+    *** *** ***
+
         RELATIVE LINK:
         <a href="page2.html"> SPOTLIGHT</a>
         The link after href works because both files (index and page2) are in the same folder.
@@ -515,7 +555,10 @@
         The link after href is external and needs the complete address.
     *** *** ***
 
+    *** *************************** ***
     *** FOLDER HIERARCHY NAVIGATION ***
+    *** *************************** ***
+
         TO NAVIGATE UP A FOLDER PATH:
         <a href="../index.html"> INDEX </a>
         The file is in a folder above the current folder
@@ -527,7 +570,9 @@
         To navigate down two folders, use a slash "/" for each level.
     *** *************************** ***
 
+    *** *************** ***
     *** FORM SUBMISSIONS***
+    *** *************** ***
         The most common submission methods and how they operate:
         GET:  
         A request to retrieve something, like an image or webpage.
@@ -544,11 +589,17 @@
         A request to remove information from a database.
     *** *************** ***
 
+    *** ************* ***
     *** ACCESSIBILITY ***
-        Two ways we can do it are through adding an access key, and a tab index. 
     *** ************* ***
 
+        Two ways we can do it are through adding an access key, and a tab index. 
+
+    *** ************* ***
+
+    *** **************************** ***
     *** INPUT TYPES AND RESTRICTIONS ***
+    *** **************************** ***
         There are few different ways in which we can allow users to input information on a form.
         Each input is defined either through a tag or a combination of a tag and attribute.
         There are a number of input methods, here is some of them:
@@ -581,17 +632,87 @@
         have this match up with a database field when processed. 
     *** **************************** ***
 
-    *** THE SIGNIFICANCE OF LABELS ***
-    - Whithout the label tag, the user would have to click directly in the form field.
-    - This may sound insignificant, but consider how many users today are on mobile devices and smaller screens.
-    - Most studies estimate that 50% or more of all internet traffic is from mobile devices.
-    - The label tag also improves the experience for users utilizing screen readers.
-    - When a user focuses on a form field that has a label, the screen reader will use the associated label tag to read the name of field out loud.
-    
-    For these reasons and for ACCESSIBILITY, input tags should almost ALWAYS be accompanied by a label tag.
     *** ************************** ***
+    *** THE SIGNIFICANCE OF LABELS ***
+    *** ************************** ***
+        - Whithout the label tag, the user would have to click directly in the form field.
+        - This may sound insignificant, but consider how many users today are on mobile devices and smaller screens.
+        - Most studies estimate that 50% or more of all internet traffic is from mobile devices.
+        - The label tag also improves the experience for users utilizing screen readers.
+        - When a user focuses on a form field that has a label, the screen reader will use the associated label tag to read the name of field out loud.
+        
+        For these reasons and for ACCESSIBILITY, input tags should almost ALWAYS be accompanied by a label tag.
+    *** ************************** ***
+    
 
+    *** ********* ***
+    *** HTML TAGS ***
+    *** ********* ***
 
+        4 GROUPS:
 
+            1- STRUCTURE CONTENT THROUGH MARK UP: 
+            (p, h1-h6, div, span, ul, ol, li, and table tags)
+
+            Table Tags             
+            Table Attributes
+            Heading Tags
+            P Tag
+            Br Tag
+            Hr Tag
+            Div Tag
+            Span Tag
+            Ul and Li Tags
+            Ol and Li Tags
+            ______________________
+
+            2- SEMANTIC HTML ELEMENTS:
+            (Most of it do not change the appearance of your webpages but 
+            they help define the webpages)
+
+            Header Tag
+            Nav Tag
+            Section Tag
+            Article and Aside Tags
+            Footer Tag
+            Details and Summary Tags
+            Figure Tag
+            Caption Tag
+            ______________________
+
+            3- NAVIGATION ELEMENTS:
+            (Set the a tag for hyperlinks and how to set targets and bookmarks)
+
+            Image Links
+            The A Tag
+            Targets
+            Bookmarks
+            Relative vs. Absolute Links
+            Folder Hierarchy Navigation
+            Map
+            Area
+            ______________________
+          
+            4- FORM ELEMENTS:
+            (Know the different input types. 
+            Know how to add accessibility attributes to form fields.
+            Be able to add a submit button abd a regular button
+            Know how and when to create a datalist
+            Know the purpose of a fieldset)
+
+            Action and Method Attributes
+            Submission Methods
+            Accessibility
+            Input Types and Restrictions 
+            The Significance of Labels
+            Select Tag
+            Textarea Tag
+            Button Tag
+            Output Tag
+            Option Tag
+            Datalist Tag
+            Fieldset Tag  
+
+    *** ********* ***
     
 -->
