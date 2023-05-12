@@ -426,7 +426,7 @@
                 <option value="drums"></option>
                 <option value="bass"></option>
             </datalist>
-            
+
             <h3> FIELDSET AREA </h3>
 
             <!--  
@@ -456,34 +456,34 @@
 
                 <fieldset>
                     <legend>Questions</legend>
-                    
+
 
 
                     <p>What is you favorite music genre?</p>
-            <select name="mg" id="mg">
-               
-                <optgroup label="rock">
-                    <option value="indie">Indie</option>
-                    <option value="punk">Punk</option>
-                    <option value="Grunge">Grunge</option>
-                </optgroup>
-                <optgroup label="others">
-                    <option value="pop">Pop</option>
-                    <option value="techno">Techno</option>
-                    <option value="classic">Classic</option>
-                </optgroup>
+                    <select name="mg" id="mg">
 
-            </select>
+                        <optgroup label="rock">
+                            <option value="indie">Indie</option>
+                            <option value="punk">Punk</option>
+                            <option value="Grunge">Grunge</option>
+                        </optgroup>
+                        <optgroup label="others">
+                            <option value="pop">Pop</option>
+                            <option value="techno">Techno</option>
+                            <option value="classic">Classic</option>
+                        </optgroup>
 
-            <p>What instruments are you the most interested in learning?</p>
-            <input list="instruments" name="instruments" />
-            
-            <datalist id="instruments">
-                <option value="guitar"></option>
-                <option value="piano"></option>
-                <option value="drums"></option>
-                <option value="bass"></option>
-            </datalist>
+                    </select>
+
+                    <p>What instruments are you the most interested in learning?</p>
+                    <input list="instruments" name="instruments" />
+
+                    <datalist id="instruments">
+                        <option value="guitar"></option>
+                        <option value="piano"></option>
+                        <option value="drums"></option>
+                        <option value="bass"></option>
+                    </datalist>
 
                 </fieldset>
 
@@ -494,10 +494,84 @@
     </div>
 
     <hr>
+    <hr>
 
+    <div>
+        <h2>Featured Instruments</h2>
+        <h6>PICTURES BEING DISPLAYED IN TABLES</h6>
 
+        <!-- 
+            This section is to show how to control a page layout with images.
+            To place the images side by side (in rows and columns) one of two methods can be used: css or a table.
+         -->
+
+        <table>
+            <tr>
+                <td>
+                    <!-- 
+                        Adding a hyperlink to an image involves using the same tag and attributes as in the case 
+                        with adding a hyperlink around text, with the "a" tag and hyperlink reference. 
+                        Make sure to surround the image tag with the "a" tag, and not the other way around. 
+                    -->
+                    <a href="images/mandolin-closeup.jpg"><img src="images/mandolin.jpg" width="460"
+                            alt="mandolin" /></a>
+                </td>
+
+                <td>
+                    <img src="images/trombone.jpg" width="460" alt="trombone" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Mandolin
+                </td>
+
+                <td>
+                    Trombone
+                </td>
+            </tr>
+        </table>
+
+        <p>Click the Mandolin to see a bigger picture of it</p>
+    </div>
 
     <hr>
+    <hr>
+
+    <div>
+
+        <h2>VIDEOS</h2>
+
+        <!--  
+            To Add a video is needed to use two tags: a video tag, and one or more source tags.            
+        -->
+
+        <p>VIDEO 1</p>
+        <!--  
+            If a controls attribute is added to the video tag, it will add play controls to the video.
+        -->
+        <video height="480" controls="controls">
+            <!--  
+                Having multiple source tags allows you to have multiple video formats as sources, 
+                just in case a source is not supported on a user's browser.
+            -->
+            <source src="videos/video1.mp4" type="video/mp4"/>
+            <source src="videos/video1.mov" type="video/quicktime"/>
+
+            
+
+        </video>
+
+        <p>VIDEO 1</p>
+
+        <p>VIDEO 1</p>
+
+    </div>
+
+    <hr>
+    <hr>
+
 
     <!-- 
         FOOTER TAG
@@ -714,5 +788,19 @@
             Fieldset Tag  
 
     *** ********* ***
+
+    *** ********************* ***
+    *** VIDEO AND SOURCE TAGS ***
+    *** ********************* ***
+
+    Most common video formats are:
+
+    - MPEG (.mp4 extension): which is also known as H.264 fprmat.
+    - WebM (.webm extension): is a video format that works well on low-power devices, such as netbooks and tablets.
+    - Ogg (.ogg extension): is a popular royalty-free video format.
+
+    Many other formats are supported, so test the formats you use across multiple browsers.
+
+    *** ********************* ***
     
 -->
