@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <style>
-        /* HEIGHT AND WIDTH PROPERTIES */
+        /* 1 - HEIGHT AND WIDTH PROPERTIES */
         #blue1 {
             background: lightblue;
             border: 1px solid black;
@@ -29,7 +29,7 @@
             /* max-width: 400px; */
         }
 
-        /* FLOAT POSITIONING */
+        /* 2 - FLOAT POSITIONING */
 
         #blue2 {
             background: lightblue;
@@ -57,7 +57,7 @@
 
         }
 
-        /* RELATIVE POSITIONING */
+        /* 3 - RELATIVE POSITIONING */
 
         #blue3 {
             background: lightblue;
@@ -91,7 +91,7 @@
 
         }
 
-        /* ABSOLUT POSITIONING */
+        /* 4 - ABSOLUT POSITIONING */
         #blue4 {
             background: lightblue;
             border: 1px solid black;
@@ -107,7 +107,7 @@
             position: absolute;
             top: 2400px;
             left: 300px;
-            
+
 
         }
 
@@ -119,6 +119,99 @@
             position: relative;
             top: 100px;
             left: 100px;
+
+        }
+
+        /* 5 - STATIC */
+
+        #print1 {
+            text-align: center;
+        }
+
+        /* 6 - FIXED */
+
+        #green {
+            background: lightgreen;
+            border: 1px solid black;
+            width: 100px;
+            height: 50px;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            text-align: center;
+
+        }
+
+        /* 7 - OVERFLOW SETTINGS */
+
+        #coral7 {
+            background: lightcoral;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            overflow: scroll;
+
+        }
+
+        /* 8 - ALIGNMENT */
+
+        #blue8 {
+            background: lightblue;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            text-align: justify;
+            float: left;
+        }
+
+        #yellow8 {
+            background: yellow;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            float: left;
+            /* clear: both; */
+            text-align: center;
+        }
+
+        #coral8 {
+            background: lightcoral;
+            border: 1px solid black;
+            width: 300px;
+            height: 250px;
+            overflow: auto;
+            text-align: right;
+        }
+
+        /* 10 - VISIBILITY */
+
+        #blue10 {
+            background: lightblue;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            text-align: justify;
+            float: left;
+        }
+
+        #yellow10 {
+            background: yellow;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            float: left;
+            /* clear: both; */
+            text-align: center;
+        }
+
+        #coral10 {
+            background: lightcoral;
+            border: 1px solid black;
+            width: 300px;
+            height: 250px;
+            overflow: auto;
+            text-align: right;
+            visibility: hidden;
 
         }
     </style>
@@ -139,7 +232,7 @@
         The CSS coding examples will be in the head section within <style> tag.
     -->
 
-    <h2>HEIGHT AND WIDTH PROPERTIES - CSS</h2>
+    <h2>1 - HEIGHT AND WIDTH PROPERTIES - CSS</h2>
 
     <!--  
         MAX-WIDTH PROPERTY
@@ -191,14 +284,14 @@
 
     <section>
 
-        <h2>FLOAT POSITIONING</h2>
+        <h2>2 - FLOAT POSITIONING</h2>
 
         <!-- 
-        FLOAT
-        All elements will just flow from top to bottom on a webpage, with each element below the previous one.
-        
-        To manipulate the page and put the elements side by side it is used the FLOAT property.
-    -->
+            FLOAT
+            All elements will just flow from top to bottom on a webpage, with each element below the previous one.
+            
+            To manipulate the page and put the elements side by side it is used the FLOAT property.
+        -->
 
         <div id="blue2">
 
@@ -213,12 +306,12 @@
         </div>
 
         <!-- 
-        CLEAR PROPERTY
-        To make the yellow element to float by itself on the left side of the page 
-        we can use the clear property.
-        It says to the system to clear everything out to the left (or to the right, both sides or even none) 
-        so it can have its own space to float.
-    -->
+            CLEAR PROPERTY
+            To make the yellow element to float by itself on the left side of the page 
+            we can use the clear property.
+            It says to the system to clear everything out to the left (or to the right, both sides or even none) 
+            so it can have its own space to float.
+        -->
 
         <div id="yellow2">
 
@@ -261,7 +354,7 @@
     <section>
 
 
-        <h2>RELATIVE POSITIONING</h2>
+        <h2>3 - RELATIVE POSITIONING</h2>
 
         <!--  
             Think of relative as, relative to where it would have been. 
@@ -319,7 +412,7 @@
         <section>
 
 
-            <h2>ABSOLUTE POSITIONING</h2>
+            <h2>4 - ABSOLUTE POSITIONING</h2>
 
             <!--  
                 Relative positioning may not be enough control for laying out a web page.
@@ -383,7 +476,266 @@
 
         </section>
 
+        <br><br><br><br><br><br><br><br>
+
+        <hr>
+        <hr>
+
+        <h2>5 - STATIC</h2>
+
+        <div id="print1">
+            <p>By default the position of elements is automatically set as static.</p>
+            <img src="images/static.jpg" alt="static positioning print" width="1000px" />
+        </div>
+
+        <br>
+        <hr>
+        <hr>
+
+        <h2>6 - FIXED</h2>
+
+        <!--  
+            Fixed and Absolute positioning remove the element from the natural flow of the page.
+            The difference is, absolute positioning positions an element based on its parent element,
+            whereas an element that has a position of fixed is positioned absolutely in relation to the
+            browser window.  
+        -->
+
+        <p style="text-align: center;">
+            Fixed Positioned element is set on the top right of the page, in the green box.
+        </p>
+
+        <div id="green">
+
+            FIXED POSITION
+
+        </div>
+
+        <hr>
+        <hr>
+
+        <h2>7 - OVERFLOW SETTINGS</h2>
+
+        <!--  
+            In case of a overflow, setting a overflow property can make it more readable by adding a scroll bar, hiding the text that overflows, 
+            or even let it visible.
+        -->
+
+
+        <div id="coral7">
+
+            Nunc condimentum, erat ac tempus iaculis, sem risus sagittis diam, in malesuada dolor nulla tempus sem.
+            Mauris
+            quis est maximus, sollicitudin dolor vestibulum, commodo ligula. Nam porttitor accumsan lacus quis
+            sollicitudin.
+            Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum
+            velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.
+
+        </div>
+
+        <hr>
+        <hr>
+
+        <h2>8 - ALIGNMENT</h2>
+
+        <!--  
+            Text and objects can be aligned to the left, right, center and justfied.  
+        -->
+
+        <div id="blue8">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum arcu ac enim congue, vitae semper
+            tortor
+            vulputate. Maecenas volutpat velit quis imperdiet pulvinar. Nullam ornare ante et metus vulputate, sit amet
+            aliquet risus
+            facilisis. Sed malesuada nibh pellentesque libero sodales, eget iaculis quam pretium. Quisque laoreet
+            convallis
+            nibh sed auctor.
+            Integer ut lorem quam. Nullam ante elit, vestibulum eget lacinia ut, hendrerit non metus.
+        </div>
+
+        <div id="yellow8">
+
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
+            Vivamus sodales sapien a rutrum imperdiet.
+
+        </div>
+
+
+        <div id="coral8">
+
+            Nunc condimentum, erat ac tempus iaculis, sem risus sagittis diam, in malesuada dolor nulla tempus sem.
+            Mauris
+            quis est maximus, sollicitudin dolor vestibulum, commodo ligula. Nam porttitor accumsan lacus quis
+            sollicitudin.
+            Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum
+            velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.
+
+        </div>
+
+        <hr>
+        <hr>
+
+        <h2>9 - DISPLAY PROPERTY</h2>
+
+        <!-- 
+            BLOCK ELEMENTS:
+                - Will render the full width of the page and will always render on their own lines. 
+            INLINE ELEMENTS:
+                - Inline elements will take up the necessary space, and can position themselves alongside other elements. 
+        -->
+
+        <h3>
+            BLOCK ELEMENTS:
+        </h3>
+
+        <aside id="sidenote1">
+            NOTE #1 - Aside tag is one example of block element.
+        </aside>
+
+        <aside id="sidenote1">
+            NOTE #2 - In this case the background color extends across the page.
+        </aside>
+
+        <br>
+
+        <figure id="block1">
+            <p>PINK BLOCK</p>
+            <img src="images/cover1.png" alt=" " width="1000px" />
+            <br>
+            <figcaption>FIGCAPTION is inside the pink block and is an example of an block element.</figcaption>
+        </figure>
+
+        <hr>
+
+        <h3>DISPLAY INLINE WITH OTHER ELEMENTS:</h3>
+
+        <aside id="sidenote2">
+            NOTE #4 - Whith the display property set to be inline the back ground color doesn't extend across the page.
+        </aside>
+
+        <aside id="sidenote3">
+            NOTE #5 - Also positioning themselves alongside other elements..
+        </aside>
+
+        <br><br><br><br>
+
+        <!-- Use <br> between elements to print in another line -->
+
+        <figure id="block2">
+            BROWN BLOCK
+            <img src="images/cover2.png" width="800px" />
+            <figcaption id="block2"> Figcaption with inline display. </figcaption>
+        </figure>
+
+        <br><br><br>
+
+        <hr>
+        <hr>
+
+        <h2>10 - VISIBILITY</h2>
+
+        <!--  
+            Work with the visibility property is to make an object invisible.
+            To change the visibility after the page loads it is needed to use javascript with onclick event
+        -->
+
+        <div id="blue10">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum arcu ac enim congue, vitae semper
+            tortor
+            vulputate. Maecenas volutpat velit quis imperdiet pulvinar. Nullam ornare ante et metus vulputate, sit amet
+            aliquet risus
+            facilisis. Sed malesuada nibh pellentesque libero sodales, eget iaculis quam pretium. Quisque laoreet
+            convallis
+            nibh sed auctor.
+            Integer ut lorem quam. Nullam ante elit, vestibulum eget lacinia ut, hendrerit non metus.
+        </div>
+
+        <div id="yellow10">
+
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
+            Vivamus sodales sapien a rutrum imperdiet. Duis feugiat tempus urna, rhoncus sollicitudin magna luctus in.
+
+            <p onclick="javascript:document.getElementById('coral10').style.visibility='visible'">Click to see the coral
+                box</p>
+        </div>
+
+        <div id="coral10">
+
+            Nunc condimentum, erat ac tempus iaculis, sem risus sagittis diam, in malesuada dolor nulla tempus sem.
+            Mauris
+            quis est maximus, sollicitudin dolor vestibulum, commodo ligula. Nam porttitor accumsan lacus quis
+            sollicitudin.
+            Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum
+            velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.
+
+        </div>
+
+
+        <br><br><br>
+
+        <hr>
+        <hr>
+
+        <h2>Box Model Margins</h2>
+
+        
+
+
+
 
 </body>
 
 </html>
+
+
+<!--  
+
+    EXTRA NOTES:
+
+    *** ******* ***
+    *** DISPLAY ***
+    *** ******* ***
+
+    BLOCK ELEMENTS:
+        - Will render the full width of the page and will always render on their own lines. 
+    INLINE ELEMENTS:
+        - Inline elements will take up the necessary space, and can position themselves alongside other elements.
+        
+    
+    *** ******* ***
+
+ -->

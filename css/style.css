@@ -16,6 +16,39 @@ nav {
     text-decoration: none;
 }
 
+figcaption {
+    color: navy;
+    font-weight: bold;
+    background-color: #aef;
+}
+
+#block1{
+    background-color: lightpink;
+    text-align: center;
+}
+
+#sidenote1{
+    background-color: #ddd;
+}
+
+#block2{
+    background-color: burlywood;
+    text-align: center;
+    display: inline;
+}
+
+#sidenote2{
+    background-color: #ddd;
+    text-align: center;
+    display: inline;
+}
+
+#sidenote3{
+    background-color: lightblue;
+    text-align: center;
+    display: inline;
+}
+
 footer {
     text-align: center;
 }
