@@ -1,0 +1,81 @@
+body{
+    font-family: 'Segoe UI, Tahoma, sans-serif';    
+}
+
+h1, h2{
+    text-align: center;
+}
+
+
+p {
+    color: navy;
+}
+
+nav {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+/* 
+
+*** CLASS ***
+A style that can be applied to any tag and can be used as many times as you want.
+Classes start with a dot. Eg.: 
+
+.sale{
+
+}
+
+*/
+
+/*
+
+*** ID ***
+Similar to a Class, but should be used once per page.
+
+IDs start with a pound symbol. Eg.:
+
+#sidenote{
+
+}
+
+*/
+
+/* 
+
+*** PSEUDO CLASS ***
+A class that applies specifically to a tag
+
+Eg.: "a tag" has several pseudo tags, such as "visited", "active" and "hover".
+     a{
+        text-decoration: none;
+        
+     }
+
+     **Here's the pseudo class:
+     a:hover{                                        
+        text-decoration: underline;
+        font-weight bold;
+
+     }
+
+
+*/
+
+/* 
+
+*** PSEUDO ID ***
+
+
+*/
+
+
+
+/* 
+     GENERAL NOTES
+     
+*/

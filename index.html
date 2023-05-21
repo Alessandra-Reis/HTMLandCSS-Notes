@@ -44,7 +44,7 @@
         LINK TAGS
         Associated with external files and not hyperlink
     -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 </head>
 
@@ -552,25 +552,71 @@
             If a controls attribute is added to the video tag, it will add play controls to the video.
         -->
         <video height="480" controls="controls">
+
             <!--  
                 Having multiple source tags allows you to have multiple video formats as sources, 
                 just in case a source is not supported on a user's browser.
             -->
             <source src="videos/video1.mp4" type="video/mp4"/>
             <source src="videos/video1.mov" type="video/quicktime"/>
-
             
+            <!--  
+                TRACK TAG
+                Works in conjuction with .vtt files as part of the WebVTT (Web Video Text Tracks).
+                A webpage using this does need to be on a web server which supports the .vtt format.                
+                It is possible to add multiple files using multiple languages. You will probably have to turn it on with the control panel. 
+            -->
+            <track src="videos/subtitles.vtt" kind="subtitles" srclang="en" label="English"/>
 
         </video>
-
-        <p>VIDEO 1</p>
-
-        <p>VIDEO 1</p>
+        
 
     </div>
 
     <hr>
     <hr>
+
+    <div>
+
+        <h2>AUDIO</h2>
+
+        <!--  
+            Audio tags are used in just about the same manner as video tags.
+            An audio tag can have multiple sources and should have the controls 
+            attribute added to allow a user to control when the audio plays.            
+        -->
+
+        <p>MUSIC</p>
+                    
+        <audio controls="controls">
+            <source src="audios/Aqui.mp3" type="audio/mp3" />
+        </audio>
+       
+
+    </div>
+
+    <hr>
+    <hr>
+
+    <h2>iFrame</h2>
+
+    <p>It allows you to put one HTML file inside of another.</p>
+
+    <!-- 
+        iFRAME
+        It is a content-holding frame inside of a webpage.
+        What makes an iFrame versatile is that it can be programmatically changed.
+        For example, an iFrame could be holding a picture or text from another webpage, 
+        and then, that source can be changed through the click of a button or some other user interaction.
+    -->
+    
+    <iframe width="300" height="300" id="vtt" src="page2.html">
+
+    </iframe>
+
+    <hr>
+    <hr>
+
 
 
     <!-- 
@@ -795,7 +841,7 @@
 
     Most common video formats are:
 
-    - MPEG (.mp4 extension): which is also known as H.264 fprmat.
+    - MPEG (.mp4 extension): the most common which is also known as H.264 fprmat.
     - WebM (.webm extension): is a video format that works well on low-power devices, such as netbooks and tablets.
     - Ogg (.ogg extension): is a popular royalty-free video format.
 

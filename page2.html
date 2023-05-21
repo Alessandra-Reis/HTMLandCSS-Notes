@@ -3,7 +3,126 @@
 
 <head>
     <title>SPOTLIGHT</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <style>
+        /* HEIGHT AND WIDTH PROPERTIES */
+        #blue1 {
+            background: lightblue;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+        }
+
+        #yellow1 {
+            background: yellow;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+        }
+
+        #coral1 {
+            background: lightcoral;
+            border: 1px solid black;
+            width: 600px;
+            height: 250px;
+            /* max-width: 400px; */
+        }
+
+        /* FLOAT POSITIONING */
+
+        #blue2 {
+            background: lightblue;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            float: left;
+        }
+
+        #yellow2 {
+            background: yellow;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            float: left;
+            /* clear: both; */
+        }
+
+        #coral2 {
+            background: lightcoral;
+            border: 1px solid black;
+            width: 600px;
+            height: 250px;
+            float: left;
+
+        }
+
+        /* RELATIVE POSITIONING */
+
+        #blue3 {
+            background: lightblue;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+
+
+        }
+
+        #yellow3 {
+            background: yellow;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            bottom: 100px;
+
+        }
+
+        #coral3 {
+            background: lightcoral;
+            border: 1px solid black;
+            width: 600px;
+            height: 250px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+
+        }
+
+        /* ABSOLUT POSITIONING */
+        #blue4 {
+            background: lightblue;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+        }
+
+        #yellow4 {
+            background: yellow;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 2400px;
+            left: 300px;
+            
+
+        }
+
+        #coral4 {
+            background: lightcoral;
+            border: 1px solid black;
+            width: 600px;
+            height: 250px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+
+        }
+    </style>
+
 </head>
 
 <body>
@@ -11,6 +130,259 @@
     <nav>
         <a href="index.html"> HOME </a>| BOOKS | CONTACT US | <a href=""> SPOTLIGHT</a>
     </nav>
+
+    <hr>
+
+    <!--  
+        Use "div" tags with ID's and then styles on those ID's 
+        to take more control over the overall layout of the pages.
+        The CSS coding examples will be in the head section within <style> tag.
+    -->
+
+    <h2>HEIGHT AND WIDTH PROPERTIES - CSS</h2>
+
+    <!--  
+        MAX-WIDTH PROPERTY
+        Set the max-width property  on an element to make sure that the total width of the page doesn't exceed the 
+        screen size to which most of the audience will use.
+        The key to use max-width property is to understand whether it takes precedence over the width property.
+        
+    -->
+
+    <div id="blue1">
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum arcu ac enim congue, vitae semper tortor
+        vulputate. Maecenas volutpat velit quis imperdiet pulvinar. Nullam ornare ante et metus vulputate, sit amet
+        aliquet risus
+        facilisis. Sed malesuada nibh pellentesque libero sodales, eget iaculis quam pretium. Quisque laoreet convallis
+        nibh sed auctor.
+        Integer ut lorem quam. Nullam ante elit, vestibulum eget lacinia ut, hendrerit non metus.
+    </div>
+
+    <div id="yellow1">
+
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+        per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
+        Vivamus sodales sapien a rutrum imperdiet. Duis feugiat tempus urna, rhoncus sollicitudin magna luctus in.
+        Donec lobortis leo sem, eget vehicula nulla placerat nec. Cras eu malesuada erat.
+        Maecenas pretium, nibh quis feugiat iaculis, enim tortor placerat metus, nec feugiat risus quam in arcu.
+
+    </div>
+
+    <div id="coral1">
+
+        Nunc condimentum, erat ac tempus iaculis, sem risus sagittis diam, in malesuada dolor nulla tempus sem. Mauris
+        quis est maximus, sollicitudin dolor vestibulum, commodo ligula. Nam porttitor accumsan lacus quis sollicitudin.
+        Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum velit est, eget sollicitudin leo
+        imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci ornare,
+        eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+        efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas.Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum
+        velit est, eget sollicitudin leo
+        imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci ornare,
+        eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+        efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas.
+
+    </div>
+
+    <hr>
+    <hr>
+
+    <section>
+
+        <h2>FLOAT POSITIONING</h2>
+
+        <!-- 
+        FLOAT
+        All elements will just flow from top to bottom on a webpage, with each element below the previous one.
+        
+        To manipulate the page and put the elements side by side it is used the FLOAT property.
+    -->
+
+        <div id="blue2">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum arcu ac enim congue, vitae semper
+            tortor
+            vulputate. Maecenas volutpat velit quis imperdiet pulvinar. Nullam ornare ante et metus vulputate, sit amet
+            aliquet risus
+            facilisis. Sed malesuada nibh pellentesque libero sodales, eget iaculis quam pretium. Quisque laoreet
+            convallis
+            nibh sed auctor.
+            Integer ut lorem quam. Nullam ante elit, vestibulum eget lacinia ut, hendrerit non metus.
+        </div>
+
+        <!-- 
+        CLEAR PROPERTY
+        To make the yellow element to float by itself on the left side of the page 
+        we can use the clear property.
+        It says to the system to clear everything out to the left (or to the right, both sides or even none) 
+        so it can have its own space to float.
+    -->
+
+        <div id="yellow2">
+
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
+            Vivamus sodales sapien a rutrum imperdiet.
+
+        </div>
+
+        <div id="coral2">
+
+            Nunc condimentum, erat ac tempus iaculis, sem risus sagittis diam, in malesuada dolor nulla tempus sem.
+            Mauris
+            quis est maximus, sollicitudin dolor vestibulum, commodo ligula. Nam porttitor accumsan lacus quis
+            sollicitudin.
+            Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum
+            velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.
+
+        </div>
+
+    </section>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <hr>
+    <hr>
+
+
+
+    <section>
+
+
+        <h2>RELATIVE POSITIONING</h2>
+
+        <!--  
+            Think of relative as, relative to where it would have been. 
+            But this creates a problem if the other elements (boxes) don't have their relative position set as well. 
+        -->
+
+        <div id="blue3">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum arcu ac enim congue, vitae semper
+            tortor
+            vulputate. Maecenas volutpat velit quis imperdiet pulvinar. Nullam ornare ante et metus vulputate, sit amet
+            aliquet risus
+            facilisis. Sed malesuada nibh pellentesque libero sodales, eget iaculis quam pretium. Quisque laoreet
+            convallis nibh sed auctor.
+            Integer ut lorem quam. Nullam ante elit, vestibulum eget lacinia ut, hendrerit non metus.
+        </div>
+
+
+        <div id="yellow3">
+
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
+            Vivamus sodales sapien a rutrum imperdiet.
+
+        </div>
+
+        <div id="coral3">
+
+            Nunc condimentum, erat ac tempus iaculis, sem risus sagittis diam, in malesuada dolor nulla tempus sem.
+            Mauris
+            quis est maximus, sollicitudin dolor vestibulum, commodo ligula. Nam porttitor accumsan lacus quis
+            sollicitudin.
+            Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum
+            velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.
+
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+
+        <hr>
+        <hr>
+
+
+
+        <section>
+
+
+            <h2>ABSOLUTE POSITIONING</h2>
+
+            <!--  
+                Relative positioning may not be enough control for laying out a web page.
+                ABSOLUTE POSITIONING, though, does take control over the layout. 
+
+                Absolute Positioning changes the flow below the element. Relative positioning does not.                
+            -->
+
+            <div id="blue4">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum arcu ac enim congue, vitae semper
+                tortor
+                vulputate. Maecenas volutpat velit quis imperdiet pulvinar. Nullam ornare ante et metus vulputate, sit
+                amet
+                aliquet risus
+                facilisis. Sed malesuada nibh pellentesque libero sodales, eget iaculis quam pretium. Quisque laoreet
+                convallis nibh sed auctor.
+                Integer ut lorem quam. Nullam ante elit, vestibulum eget lacinia ut, hendrerit non metus.
+            </div>
+
+            <!-- 
+                With the absolute positioning is absolutely positioned with the amount of pixels down and left as set with css above.
+                If is there a box positioned in that spot of the page, the element with absolute values will overlap whatever is behind.
+            -->
+
+
+            <div id="yellow4">
+
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
+                Vivamus sodales sapien a rutrum imperdiet.
+
+            </div>
+
+            <div id="coral4">
+
+                Nunc condimentum, erat ac tempus iaculis, sem risus sagittis diam, in malesuada dolor nulla tempus sem.
+                Mauris
+                quis est maximus, sollicitudin dolor vestibulum, commodo ligula. Nam porttitor accumsan lacus quis
+                sollicitudin.
+                Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum velit est, eget sollicitudin
+                leo
+                imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+                ornare,
+                eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh
+                diam,
+                efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et
+                netus et
+                malesuada fames ac turpis egestas.Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis
+                rutrum
+                velit est, eget sollicitudin leo
+                imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+                ornare,
+                eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh
+                diam,
+                efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et
+                netus et
+                malesuada fames ac turpis egestas.
+
+            </div>
+
+        </section>
+
 
 </body>
 
