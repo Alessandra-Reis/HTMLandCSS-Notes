@@ -1,61 +1,87 @@
-body{
-    font-family: 'Segoe UI, Tahoma, sans-serif';    
+body {
+    font-family: 'Segoe UI, Tahoma, sans-serif';
 }
 
-h1, h2{
+h1,
+h2 {
     text-align: center;
 }
 
+/* Font-family demonstration to apply to multiple elements at once. */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Paragraph */
 p {
     color: navy;
 }
 
+/* NavBar */
 nav {
     text-align: center;
     text-decoration: none;
 }
 
+/* Figure's (picture) caption */
 figcaption {
-    color: navy;
-    font-weight: bold;
+    color: #032f0d;    
     background-color: #aef;
 }
 
-#block1{
+/* Class example */
+.figcap {
+    font-style: italic;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+/* >>> Styling to highlight block and inline elements differences */
+
+#block1 {
     background-color: lightpink;
     text-align: center;
 }
 
-#sidenote1{
+#sidenote1 {
     background-color: #ddd;
 }
 
-#block2{
+#block2 {
     background-color: burlywood;
     text-align: center;
     display: inline;
 }
 
-#sidenote2{
+#sidenote2 {
     background-color: #ddd;
     text-align: center;
     display: inline;
 }
 
-#sidenote3{
+#sidenote3 {
     background-color: lightblue;
     text-align: center;
     display: inline;
 }
 
+/* _____________________________________________________*/
+
 footer {
     text-align: center;
 }
 
+
 /* 
 
-*** CLASS ***
+>>> CLASS <<<
+
 A style that can be applied to any tag and can be used as many times as you want.
 Classes start with a dot. Eg.: 
 
@@ -63,11 +89,10 @@ Classes start with a dot. Eg.:
 
 }
 
-*/
+________________________________________________________________
 
-/*
+>>> ID <<<
 
-*** ID ***
 Similar to a Class, but should be used once per page.
 
 IDs start with a pound symbol. Eg.:
@@ -76,11 +101,10 @@ IDs start with a pound symbol. Eg.:
 
 }
 
-*/
+________________________________________________________________
 
-/* 
+>>> PSEUDO CLASS <<<
 
-*** PSEUDO CLASS ***
 A class that applies specifically to a tag
 
 Eg.: "a tag" has several pseudo tags, such as "visited", "active" and "hover".
@@ -96,19 +120,81 @@ Eg.: "a tag" has several pseudo tags, such as "visited", "active" and "hover".
 
      }
 
+________________________________________________________________
 
-*/
+>>> PSEUDO ID <<<
 
-/* 
+________________________________________________________________
 
-*** PSEUDO ID ***
+>>> COLORS <<<
+
+The two main ways to assign a color to elements are through 
+naming a color or through using hexadecimal colors.
+
+To avoid potential confusion with different browsers, it is 
+recommended to use HEXADECIMAL notation for colors.
+
+     >> HEXADECIMAL COLORS:
+        
+        Hexadecimal numbers: 
+        #000000 #FFFFFF
+
+        0 represents black while F represents white.
+        The 6 values are actually in 3 pairs which signify 
+        the amount of red, green, and blue used in the color.
+
+        Eg.: #FF0000 - This represents:
+             All red (FF), no green (00), and no blue(00).
+
+             #00FF00 represents:
+
+             No red (00), all green (FF), and no blue (00).
+
+            #000088 represents:
+
+            No red (00), no green (00), and HALF blue (88).
+
+            It is also possible to abbreviate: 
+
+            #F00, #0F0, #008, #fff, #000.
+
+            Only if each pair has the same value.
+
+________________________________________________________________
+
+>>> FONT STYLE <<<
+
+    font-style 
+________________________________________________________________
 
 
-*/
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
 
 
 
-/* 
-     GENERAL NOTES
-     
+________________________________________________________________
+
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
 */
