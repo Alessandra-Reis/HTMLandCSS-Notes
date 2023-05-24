@@ -9,13 +9,10 @@ h2 {
 
 /* Font-family demonstration to apply to multiple elements at once. */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Helvetica, Arial, sans-serif;
+    /* small-caps font variant example: */
+    font-variant: small-caps;
 }
 
 /* Paragraph */
@@ -40,6 +37,11 @@ figcaption {
     font-style: italic;
     font-size: 16pt;
     font-weight: bold;
+}
+
+.leftindent {
+    /* text-indent: 5em; */
+    padding-left: 5em;
 }
 
 /* >>> Styling to highlight block and inline elements differences */
@@ -69,13 +71,47 @@ figcaption {
     background-color: lightblue;
     text-align: center;
     display: inline;
+    
 }
 
 /* _____________________________________________________*/
 
+/* HYPERLINK - Changing default colors */
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:active {
+    color: #63f60a;
+}
+
+a:visited {
+    color: #808080;
+}
+
+a:hover{                                        
+    text-decoration: underline;
+    font-weight: bold;
+
+ }
+
+/* ____________________________________ */
+
+
 footer {
     text-align: center;
 }
+
+/* Class that can only be applied to table cells */
+td.vbot {
+    /* vbot: short for vertical bottom */
+    vertical-align: bottom;
+    height: 30px;
+
+}
+
 
 
 /* 
@@ -116,7 +152,7 @@ Eg.: "a tag" has several pseudo tags, such as "visited", "active" and "hover".
      **Here's the pseudo class:
      a:hover{                                        
         text-decoration: underline;
-        font-weight bold;
+        font-weight: bold;
 
      }
 
@@ -162,22 +198,56 @@ recommended to use HEXADECIMAL notation for colors.
 
 ________________________________________________________________
 
->>> FONT STYLE <<<
+>>> FONT STYLE, SIZE AND WEIGHT <<<
+    
+    >> FONT-STYLE:
+        Offers a selection of style, such as italic, normal, oblique... 
 
-    font-style 
+    >> FONT-SIZE:    
+        Sets how big or how small the text is going to be.
+
+    >> FONT-WEIGHT:
+        Controls the boldness level of text.
+        A lot of browsers supports 400 and 700 as measures od boldness,
+        but nothing else. The safest way to use it is to set 
+        the font-weight as "bold".
+        (**Words are more consistent than numbers across browsers 
+        when it comes to font weights**).
 ________________________________________________________________
 
+>>> LINK COLORS <<<
 
+HYPERLINKS have default colors:
+
+     > blue is the color of a hyperlink that has not been visited.
+     > red is the color of an active hyperlink that has been clicked.
+     > purple is the color of a visited hyperlink.
+
+For this reason it is recommended to avoid using blue, red and purple 
+as text colors as users could confuse this text with hyperlinks.
+It is also possible though to change the hyperlinks default colors and 
+use other ones.
 
 ________________________________________________________________
 
+>>> FONT VARIANT<<<
+
+Simply put, the font-variant property can change text to be in 
+the Small Caps style, meaning lowercase letters are in a 
+uppercase style with a slightly reduced size.
 
 ________________________________________________________________
 
+>>> TEXT DECORATION <<<
+
+This property in CSS deals with text being underlined or not.
 
 ________________________________________________________________
 
+>>> INDENTATION <<<
 
+Controls the first-line text indent in a multiline paragraph.
+To indent the entire paragraph it is necessary to use padding.
 ________________________________________________________________
 
 
