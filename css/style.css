@@ -250,17 +250,29 @@ Controls the first-line text indent in a multiline paragraph.
 To indent the entire paragraph it is necessary to use padding.
 ________________________________________________________________
 
+>>> LINE HEIGHT <<<
+
+This property sets the height of individual lines within an 
+element. 
+________________________________________________________________
+
+>>> WORD-WRAP <<<
+
+It is a CSS property that tells the browser how to display long 
+words that over extend their parent element.
 
 ________________________________________________________________
 
+>>> LETTER-SPACING || WORD-SPACING <<<
 
+    >> LETTER SPACING
+        Sets to the space between characters in a word.
+
+    >> WORD-SPACING
+        Sets the space between words.
 
 ________________________________________________________________
-
-
-
-________________________________________________________________
-
+ 
 
 ________________________________________________________________
 

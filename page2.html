@@ -249,7 +249,7 @@
             height: 250px;
             overflow: auto;
             text-align: right;
-            
+
 
         }
 
@@ -288,11 +288,90 @@
             width: 300px;
             height: 250px;
             overflow: auto;
-            text-align: right;            
+            text-align: right;
         }
 
+        /* 13 - LINE HEIGHT */
 
+        #blue13 {
+            background: lightblue;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+        }
 
+        #yellow13 {
+            background: yellow;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            line-height: 20px;
+        }
+
+        #coral13 {
+            background: lightcoral;
+            border: 1px solid black;
+            width: 600px;
+            height: 250px;
+            /* max-width: 400px; */
+        }
+
+        /* 14 - WORD-WRAP */
+
+        #wrap1 {
+
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+            height: 150px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 0 auto;
+            word-wrap: normal;
+
+        }
+
+        #wrap2 {
+
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+            height: 150px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 0 auto;
+            word-wrap: break-word;
+
+        }
+
+        /* 14 - LETTER-SPACING & WORD-SPACING */
+
+        #nospace {
+
+            background-color: lightgray;            
+            height: 100px;
+            width: 400px;
+            border: 1px solid black;
+            
+        }
+
+        #lspace {
+
+            background-color: lightgray;            
+            height: 100px;
+            width: 400px;
+            border: 1px solid black;   
+            letter-spacing: 15px;         
+            
+        }
+
+        #wspace {
+
+            background-color: lightgray;            
+            height: 100px;
+            width: 400px;
+            border: 1px solid black;  
+            word-spacing: 15px;          
+            
+        }
     </style>
 
 </head>
@@ -814,7 +893,7 @@
             per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
             Vivamus sodales sapien a rutrum imperdiet. Duis feugiat tempus urna, rhoncus sollicitudin magna luctus in.
 
-            
+
         </div>
 
         <div id="coral11">
@@ -869,7 +948,7 @@
             per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
             Vivamus sodales sapien a rutrum imperdiet. Duis feugiat tempus urna, rhoncus sollicitudin magna luctus in.
 
-            
+
         </div>
 
         <div id="coral12">
@@ -892,6 +971,112 @@
             malesuada fames ac turpis egestas.
 
         </div>
+
+        <br><br><br>
+
+        <hr>
+        <hr>
+
+        <h2>13 - Line Height</h2>
+
+        <!-- 
+            This property sets the height of individual lines within an element.  
+        -->
+
+        <div id="blue13">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum arcu ac enim congue, vitae semper
+            tortor
+            vulputate. Maecenas volutpat velit quis imperdiet pulvinar. Nullam ornare ante et metus vulputate, sit amet
+            aliquet risus
+            facilisis. Sed malesuada nibh pellentesque libero sodales, eget iaculis quam pretium. Quisque laoreet
+            convallis
+            nibh sed auctor.
+            Integer ut lorem quam. Nullam ante elit, vestibulum eget lacinia ut, hendrerit non metus.
+        </div>
+
+        <div id="yellow13">
+
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
+            Vivamus sodales sapien a rutrum imperdiet. Duis feugiat tempus urna, rhoncus sollicitudin magna luctus in.
+
+
+        </div>
+
+        <div id="coral13">
+
+            Nunc condimentum, erat ac tempus iaculis, sem risus sagittis diam, in malesuada dolor nulla tempus sem.
+            Mauris
+            quis est maximus, sollicitudin dolor vestibulum, commodo ligula. Nam porttitor accumsan lacus quis
+            sollicitudin.
+            Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.Quisque justo turpis, tempus et placerat at, mattis a mauris. Duis rutrum
+            velit est, eget sollicitudin leo
+            imperdiet id. Donec ut nisl interdum, tempus lacus quis, finibus magna. Vivamus malesuada nunc eget orci
+            ornare,
+            eu pharetra arcu blandit. Nullam augue sem, gravida at massa a, blandit dapibus ligula. Praesent nibh diam,
+            efficitur non feugiat et, sollicitudin non neque. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas.
+
+        </div>
+
+        <br><br><br>
+
+        <hr>
+        <hr>
+
+        <h2>14 - Word-Wrap</h2>
+
+        <h3 style="text-align: center;">Example #1 >> word-wrap: normal</h3>
+        <div id="wrap1">
+            This is an example of a box that has a verrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrry long word.
+        </div>
+
+        <br>
+
+        <h3 style="text-align: center;">Example #2 >> word-wrap: break-word</h3>
+        <div id="wrap2">
+            This is an example of a box that has a verrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrry long word.
+        </div>
+
+        <br><br><br>
+
+        <hr>
+        <hr>
+
+        <h2>15 - Letter-Spacing, Word-Spacing</h2>
+
+        <!--  
+            >> LETTER SPACING: Sets to the space between characters in a word.
+
+            >> WORD-SPACING: Sets the space between words.
+        -->
+
+
+        <h3 style="text-align: center;">Example #1 >> word-wrap: normal</h3>
+        <div id="nospace">
+            Interdum consecttetur libero id faucibus nisl.
+        </div>
+
+        <br>
+
+        <h3 style="text-align: center;">Example #2 >> word-wrap: break-word</h3>
+        <div id="lspace">
+            Interdum consecttetur libero id faucibus nisl.
+        </div>
+
+        <h3 style="text-align: center;">Example #2 >> word-wrap: break-word</h3>
+        <div id="wspace">
+            Interdum consecttetur libero id faucibus nisl.
+        </div>
+
+
+
 
         <br><br><br>
 
