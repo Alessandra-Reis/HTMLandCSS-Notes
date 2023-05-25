@@ -130,6 +130,17 @@ a:hover{
 
 /* ____________________________________ */
 
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+
+/* ____________________________________ */
+
 footer {
     text-align: center;
 }
@@ -340,27 +351,83 @@ Div tag can be used to control the width of an entire page.
 The more fixed the layout is, the less fluid it iss across multiple devices.
 ________________________________________________________________
 
+>>> UNITS OF MEASURE <<<
 
+There are several different units of measure to use for sizing, 
+margins, padding, and anything else requiring a measurement.
 
+    em -> relative measurement equivalent to the font size that 
+          is in use. 
+          Eg.: 3em would be 3 times the size of the current font
+    ex -> A measurement relative to the heigh of the letter x.
+    px -> A measurement of 1/96 of an inch or 0.26 millimeters
+          (can vary based on screen size)
+    pt -> A measurement that is 1/72 of an inch or 0.35 millimeters.
+
+Ruler Measurements:
+
+    cm -> Centimeters
+    in -> Inches
+    mm -> Millimeters 
 
 ________________________________________________________________
 
+>>> VIEWPORT <<<
+
+This sets the content to be the width of the device width, 
+scaled to normal size. The viewport meta tag works well on pages 
+to where do not have to have a lot of objects with a large fixed
+width size. In other words, is better to not use this meta tag on 
+a page with large pictures as they won't scale well to different 
+devices. 
 
 ________________________________________________________________
 
+>>> RESPONSIVE WEB DESIGN <<<
+
+To design websites to be responsive to different devices, mainly desktops
+or laptops, tablets, and smartphones. Webpages should display as best as
+possible with a minimum amount of effort. 
+One way to accomplish this is to add a meta tag with a viewport setting. 
+________________________________________________________________
+
+>>> MEDIA QUERY <<<
+
+A fairly granular way to control how a website displays across 
+devices, is to use a media query. A media query is simply added 
+to a stylesheet, to where it checks for screen width, and changes 
+changes styles according to that screen width. 
+It is possible to have two completely different layouts in one 
+stylesheet file, with the media query determining which set 
+of styles is used.
 
 ________________________________________________________________
 
+>>> PERCENTAGES AND PIXELS <<<
+
+When controlling measurements of elements on pages, the key is 
+to make sure widths of elements do not exceed the screen width 
+of a device. The #1 annoyance for most viewers of a webpage is 
+having to scroll left and right to view the page.
+Setting a fixed pixel measurement on and element, or use 
+percentages to create fluidity with the element size in relation 
+to the screen size, are ways to avoid exceeding the screen width.
 
 ________________________________________________________________
 
+>>> FRAMEWORKS and TEMPLATES <<<
 
+A CSS framework is a template you create, or one that you can 
+download for free or purchase from a third-party, that has built-in
+CSS that can be used to ease in development of a website.
+
+csszengarden.com
+
+As with obtaining anything from the web, though, check for any 
+licensing requirements and/or restrictions. 
 ________________________________________________________________
 
-
-________________________________________________________________
-
-
+>>> MAX-WIDTH PROPERTY
 ________________________________________________________________
 
 

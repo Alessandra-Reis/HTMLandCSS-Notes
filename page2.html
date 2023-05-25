@@ -4,6 +4,8 @@
 <head>
     <title>SPOTLIGHT</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 
     <style>
         /* 1 - HEIGHT AND WIDTH PROPERTIES */
@@ -342,7 +344,7 @@
 
         }
 
-        /* 14 - LETTER-SPACING & WORD-SPACING */
+        /* 15 - LETTER-SPACING & WORD-SPACING */
 
         #nospace {
 
@@ -373,7 +375,7 @@
 
         }
 
-        /* 15 - BACKGROUND */
+        /* 16 - BACKGROUND */
 
         #blue16 {
             background-color: lightblue;
@@ -401,6 +403,18 @@
             background-image: url(images/bg.png);
             /* repeat-y to repeat the image vertically and repeat-x to repeat horizontally */
             background-repeat: repeat-x;
+        }
+
+        /* 17 Percentage & Pixels */
+
+        /* table1: if the screen gets smaller than 400px, the table won't get smaller than this value. */
+        #table1 {
+            width: 400px;
+        }
+
+        /* table2: it will always take 50% of the size of the screen. */
+        #table2 {
+            width: 50%;
         }
 
         /* always put semicolons at the end of the statements */
@@ -1146,6 +1160,72 @@
 
         </div>
 
+        <br> <br> <br>
+
+        <hr> <hr> 
+
+        <h2>17 - Percentage and Pixels</h2>
+
+        <table id="table1" border="1">
+
+            
+            <caption> Current Summer Hours</caption>
+
+            <th colspan="2">
+                Hours of Operation
+            </th>
+            <tr>
+                <th>Days</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>M-F</td>
+                <td>10am to 6pm</td>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>9am to 6pm</td>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>11am to 5pm</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="vbot"> Hours may vary on holidays</td>
+            </tr>
+
+        </table>
+        <br>
+
+        <table id="table2" border="1">
+
+            
+            <caption> Current Summer Hours</caption>
+
+            <th colspan="2">
+                Hours of Operation
+            </th>
+            <tr>
+                <th>Days</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>M-F</td>
+                <td>10am to 6pm</td>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>9am to 6pm</td>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>11am to 5pm</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="vbot"> Hours may vary on holidays</td>
+            </tr>
+
+        </table>
 
 
         <hr>
