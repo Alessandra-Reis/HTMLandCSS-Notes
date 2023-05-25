@@ -346,32 +346,64 @@
 
         #nospace {
 
-            background-color: lightgray;            
+            background-color: lightgray;
             height: 100px;
             width: 400px;
             border: 1px solid black;
-            
+
         }
 
         #lspace {
 
-            background-color: lightgray;            
+            background-color: lightgray;
             height: 100px;
             width: 400px;
-            border: 1px solid black;   
-            letter-spacing: 15px;         
-            
+            border: 1px solid black;
+            letter-spacing: 15px;
+
         }
 
         #wspace {
 
-            background-color: lightgray;            
+            background-color: lightgray;
             height: 100px;
             width: 400px;
-            border: 1px solid black;  
-            word-spacing: 15px;          
+            border: 1px solid black;
+            word-spacing: 15px;
+
+        }
+
+        /* 15 - BACKGROUND */
+
+        #blue16 {
+            background-color: lightblue;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+            text-align: left;
+            padding: .5em;
             
         }
+
+        #yellow16 {
+            background-color: yellow;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;            
+            text-align: center;
+            margin: 10px 0px 10px 0px;
+            padding: .5em;                
+
+        }
+
+        
+        .backimage {
+            background-image: url(images/bg.png);
+            /* repeat-y to repeat the image vertically and repeat-x to repeat horizontally */
+            background-repeat: repeat-x;
+        }
+
+        /* always put semicolons at the end of the statements */
     </style>
 
 </head>
@@ -1075,8 +1107,49 @@
             Interdum consecttetur libero id faucibus nisl.
         </div>
 
+        <br><br><br>
+
+        <hr>
+        <hr>
+
+        <h2>16 - Background</h2>
+
+        <!-- 
+            There are two main types of backgrounds: one set using colors, or one set using an image or images. 
+        -->
+
+        <div class="backimage">
+            <div id="blue16">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum arcu ac enim congue, vitae semper
+                tortor
+                vulputate. Maecenas volutpat velit quis imperdiet pulvinar. Nullam ornare ante et metus vulputate, sit
+                amet
+                aliquet risus
+                facilisis. Sed malesuada nibh pellentesque libero sodales, eget iaculis quam pretium. Quisque laoreet
+                convallis
+                nibh sed auctor.
+                Integer ut lorem quam. Nullam ante elit, vestibulum eget lacinia ut, hendrerit non metus.
+            </div>
+
+            <div id="yellow16">
+
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per inceptos himenaeos. Aenean elit quam, ultrices vitae libero efficitur, tristique gravida sem.
+                Vivamus sodales sapien a rutrum imperdiet. Duis feugiat tempus urna, rhoncus sollicitudin magna luctus
+                in.
+                Donec lobortis leo sem, eget vehicula nulla placerat nec. Cras eu malesuada erat.
+                Maecenas pretium, nibh quis feugiat iaculis, enim tortor placerat metus, nec feugiat risus quam in arcu.
+
+            </div>
+            
+
+        </div>
 
 
+
+        <hr>
+        <hr>
 
         <br><br><br>
 

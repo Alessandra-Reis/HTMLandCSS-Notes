@@ -44,6 +44,8 @@ figcaption {
     padding-left: 5em;
 }
 
+
+
 /* >>> Styling to highlight block and inline elements differences */
 
 #block1 {
@@ -52,7 +54,7 @@ figcaption {
 }
 
 #sidenote1 {
-    background-color: #ddd;
+    background-color: #ddd;      
 }
 
 #block2 {
@@ -99,6 +101,34 @@ a:hover{
 
 /* ____________________________________ */
 
+/* border color, style and width */
+#sidenote4 {
+    background-color: #ddd;
+    display: inline;
+    font-weight: bold;
+    float: right;
+    width: 100px;
+    height: 50px;
+    /* border-color: navy;
+    border-style: solid;
+    border-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px; */
+
+    /* short hand to set border values */
+    border: 2px solid navy;
+    margin-top: 5px;
+}
+
+/* ____________________________________ */
+
+/* div (page width) */
+
+#pagewidth{
+    width: 1200px;
+}
+
+/* ____________________________________ */
 
 footer {
     text-align: center;
@@ -196,6 +226,11 @@ recommended to use HEXADECIMAL notation for colors.
 
             Only if each pair has the same value.
 
+            Any hexadecimal number with a mathing number of pairs 
+            is a shade of gray.
+            Eg.: #dddddd or #e0e0e0 or #303030 or #414141 or #727272 or #333333 or #444444 ...
+            The closer to O is darker and the closer to F is lighter.
+
 ________________________________________________________________
 
 >>> FONT STYLE, SIZE AND WEIGHT <<<
@@ -272,7 +307,74 @@ ________________________________________________________________
         Sets the space between words.
 
 ________________________________________________________________
- 
+
+>>> BORDER-COLOR <<<
+
+Similar to setting text colors: with named color or hexadecimal color.
+In order to see a border, at a minimum a border-style property needs to be set.
+
+________________________________________________________________
+
+>>> BORDER-STYLE <<<
+
+Control the overall look of a border. This is another property that 
+is recommended to be tested across browsers.
+________________________________________________________________
+
+>>> BORDER-WIDTH <<<
+
+Most browsers will display a border without border-width being set.
+By using the border-width property the appearance can determined 
+by the developer and not by the browser.
+________________________________________________________________
+
+>>> BACKGROUNDS <<<
+
+There are two main types of backgrounds: 
+    one set using colors, or one set using an image or images.
+________________________________________________________________
+
+>>> DIV <<<
+
+Div tag can be used to control the width of an entire page.
+The more fixed the layout is, the less fluid it iss across multiple devices.
+________________________________________________________________
+
+
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
 
 ________________________________________________________________
 
