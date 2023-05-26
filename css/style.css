@@ -427,11 +427,43 @@ As with obtaining anything from the web, though, check for any
 licensing requirements and/or restrictions. 
 ________________________________________________________________
 
->>> MAX-WIDTH PROPERTY
+>>> MAX-WIDTH PROPERTY <<<
+
+A fluid measurement for an element can work well, but it 
+can also look awkward on a screen with a very large resolution.
+In the context of a responsive web design, max-width property 
+can help fix that.
 ________________________________________________________________
 
+>>> GRID <<<
 
+Rely on tables or floats for positioning is not always easy.
+With GRIDS developers can take far greater control over how the 
+content displays across devices. 
+Grid system is a series of columns and rows. These grids are 
+organized within a parent container, or wrapper.
+Using CSS Grids is a flexible means of organizing content by 
+columns and rows, within a container (or wrapper). This grids 
+support responsive web design and flexible layouts.
 ________________________________________________________________
+
+>>> TIPS <<<
+
+    - Max-width takes precedence over width.
+    - PADDING property is used to indent an entire paragraph.
+        
+    (REVIEW)
+    - **Different aspects of positioning 
+    - **Difference between inline and block elements
+    - **Difference between padding and margins
+    - **Know when to use font-family, font-style, and font-weight, 
+        text-alignment, text-decoration, and indentation
+    - **Know how to use the different border and background elements
+        (and roles of div tags)
+    - **Know the aspects of responsive design::after    
+        This includes units of measurement, media queries, 
+        percentages vs. pixels, what frameworks are, and 
+        the role of max-width property
 
 
 ________________________________________________________________
