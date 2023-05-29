@@ -1,5 +1,10 @@
+
 body {
     font-family: 'Segoe UI, Tahoma, sans-serif';
+    /* The body tag is using Segoe UI as a main font,
+        but it also has Tahoma as a backup in case Segoe is unavailable on someone's machine.
+        If neither font is available, the default sans-serif font will be used.
+        This is a CSS best practice known as web safe fonts.*/
 }
 
 h1,
@@ -468,9 +473,157 @@ ________________________________________________________________
 
 ________________________________________________________________
 
+>>> WEB SAFE COMBINATION <<<
+
+Some more common web safe font combinations:
+
+    - Arial, Helvetica, sans-serif
+    - Tahoma, Arial, sans-serif
+    - Georgia, serif
+    - Courier New, Courier, monospace
+    - Lucinda Console, Monaco, monospace
+
+    MONOSPACE >> All letters take up same space.
+    SANS SERIF >> Fonts without decorative flourishes on their characters.
+    SERIF >> Fonts with decorative flourishes on their characters.
 
 ________________________________________________________________
 
+>>> CROSS-PLATFORM USABILITY <<<
+
+It generally refers to a website ability to properly display and 
+function across multiple browsers.
+________________________________________________________________
+
+>>> Separation Structure (HTML) and Style (CSS):
+
+A clear separation between structure and styling makes the code
+easier to edit and debug.
+Use external sheets as much as possible to keep consistency within
+a website and save time.
+________________________________________________________________
+
+>>> ACCESSIBILITY <<<
+
+    -> Web Content Accessibility Guidelines (WCAG)
+      It is a documentation that governs many of the web's accessibility 
+      best practices. It helps to define a baseline for accessible 
+      and adaptable web design.
+      The document is updated frequently, but the sections listed 
+      throughout the remainder of the accessibility domain should 
+      not change.
+
+------------------------
+
+    -> 'alt' Attribute advantages:
+        - Accessibility > Alternate text aids screen readers in 
+                        providing accurate descriptions of content 
+                        to visually impaired users.
+                        Avoid alt text that is to long or too short.
+                        Add enough for a context.
+                        In the case of an image (eg.: logo) consider 
+                        adding a blank alt attribute (alt=" "). 
+                        Without the blank attribute, most screen 
+                        readers wil read the entire URL for an 
+                        image and that will have a negative effect 
+                        on the user's experience. 
+        - Image or video load failure > In case of a failure, the 
+                        alternate text will show in the bos where
+                        the failed image was positioned. This will
+                        enable users to continue moving though the 
+                        content. It also allows user to accurately 
+                        report the error to developers.
+        -Search engines> When search engines send out crawlers to 
+                        help index the content all across the web,
+                        these crawlers use the alt text attribute 
+                        to help accurately index the website and 
+                        more specifically, the images on it.
+                        This makes your website easier to find.
+                        
+------------------------
+
+     -> Color Contrast and Usage
+
+        - Color contrast that is too high or low can negatively 
+          affect accessibility.
+          Low color contrast can make text and images very hard 
+          to see while high contrast can cause eye strain and 
+          readability issues as well.
+
+------------------------   
+
+     -> Legibility of Typography 
+
+        - Factors to consider when styling your text:
+          Default font size
+          Font-type
+          Font-weight
+          Font-style
+          Letter-spacing and word-spacing 
+          Line-height
+          Avoid using too many different fonts on single webpage.
+          Always rely on the font-family property (with back up fonts).
+
+------------------------
+  
+
+    -> Text resizing
+
+        - The users resize text in their browser by adjusting 
+            the zoom setting, or by changing the appearance settings. 
+            
+            ..When zooming in the page, make sure it doesn't 
+            scroll horizontally. If it happens, it should be taken
+            into consideration to change the positioning of 
+            the elements.
+            
+            ..When changing the appearance setting (important to test!),
+            the containers might not accommodate the text, and the text 
+            can overflow on the boxes.            
+            If you focus on relative measurements for your text
+            and your containers, you can accommodate users that 
+            rely on the browser  to resize fonts. 
+            The element can stretch with the text, in a text box,
+            when the height is not explicitly declared in the internal 
+            stylesheet and the font is set to a relative measurement.
+
+------------------------
+
+     ->  CASCADING ISSUES 
+        
+        - The simplest way to deal with these issues is to use the 
+            Developer Tools along with the knowledge that you have 
+            about stylesheet precedence.
+        - This should be enough to troubleshoot most of CSS issues.
+        - Be aware that in more complex situations, there is CSS Specificity,
+            a hierarchy that dictates the precedence of styles at an even 
+            more granular level than just stylesheet precedence.
+        - CSS has an *important* rule, this rule can be added after a 
+            CSS property/value declaration.
+            
+            Eg.: 
+                textbox1 { 
+                    background-color: red !important; 
+                }
+            
+            This keyword will cause the style to override any styles
+            declared before it.
+            It should be used with caution!
+            If overused, it will compromise the effectiveness and 
+            clarity of the CSS, making it difficult to work with.
+            In most cases, you will be better off focusing on well structured 
+            CSS with proper selectors.
+        
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
+
+
+________________________________________________________________
 
 ________________________________________________________________
 

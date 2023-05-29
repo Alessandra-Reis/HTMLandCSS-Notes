@@ -341,18 +341,20 @@
         <form action="page2.html" method="post">
             <!-- INPUT TAG -->
             <label for="firstname">First Name</label>
-            <input type="text" name="firstname" id="firstname" /> <br>
+            <input type="text" name="firstname" id="firstname" accesskey="f" tabindex="1" />
+            <!-- Access key and tab index makes the website more accessible -->
+            <br>
             <!-- 
                 It is important to name any input field in case we need to refer to it 
                 to a script later or, in some cases, have this match up with a database field when processed.  
             -->
             <label for="lastname">Last Name</label>
-            <input type="text" name="lastname" id="lastname" /> <br>
+            <input type="text" name="lastname" id="lastname" accesskey="l" tabindex="2" /> <br>
             <!-- 
                 The ID is needed because the label uses the ID, so if somebody clicks on this label it actually goes to this field.
             -->
             <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" /> <br>
+            <input type="email" name="email" id="email" accesskey="e" tabindex="3" /> <br>
             <!-- 
                 When we put "email" as the input type, it forces whoever fills this out 
                 to have an email address in this form. 
@@ -681,191 +683,250 @@
 <!-- 
     EXTRA NOTES:
 
-    *** *** ***
-    ***LINKS***
-    *** *** ***
+        *** *** ***
+        ***LINKS***
+        *** *** ***
 
-        RELATIVE LINK:
-        <a href="page2.html"> SPOTLIGHT</a>
-        The link after href works because both files (index and page2) are in the same folder.
+            RELATIVE LINK:
+            <a href="page2.html"> SPOTLIGHT</a>
+            The link after href works because both files (index and page2) are in the same folder.
 
-        ABSOLUTE LINK:
-        <a href="https://www.google.com" target="_blank">CONTACT US</a>
-        The link after href is external and needs the complete address.
-    *** *** ***
+            ABSOLUTE LINK:
+            <a href="https://www.google.com" target="_blank">CONTACT US</a>
+            The link after href is external and needs the complete address.
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
 
-    *** *************************** ***
-    *** FOLDER HIERARCHY NAVIGATION ***
-    *** *************************** ***
+        *** *************************** ***
+        *** FOLDER HIERARCHY NAVIGATION ***
+        *** *************************** ***
 
-        TO NAVIGATE UP A FOLDER PATH:
-        <a href="../index.html"> INDEX </a>
-        The file is in a folder above the current folder
-        Two dots and slash to navigate up a folder path.
-        
-        TO NAVIGATE DOWN A FOLDER PATH:
-        src="images/cover2.png"
-        The image is in a folder below the current folder. 
-        To navigate down two folders, use a slash "/" for each level.
-    *** *************************** ***
+            TO NAVIGATE UP A FOLDER PATH:
+            <a href="../index.html"> INDEX </a>
+            The file is in a folder above the current folder
+            Two dots and slash to navigate up a folder path.
+            
+            TO NAVIGATE DOWN A FOLDER PATH:
+            src="images/cover2.png"
+            The image is in a folder below the current folder. 
+            To navigate down two folders, use a slash "/" for each level.
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
 
-    *** *************** ***
-    *** FORM SUBMISSIONS***
-    *** *************** ***
-        The most common submission methods and how they operate:
-        GET:  
-        A request to retrieve something, like an image or webpage.
-        With the get method, user attributes will appear in the URL.
 
-        POST
-        A request to take the submitted data and modify data on the server as a result of user input.
-        An example would be a form post changing existing information.
+        *** *************** ***
+        *** FORM SUBMISSIONS***
+        *** *************** ***
+            The most common submission methods and how they operate:
+            GET:  
+            A request to retrieve something, like an image or webpage.
+            With the get method, user attributes will appear in the URL.
 
-        PUT
-        A request to take submitted data and insert it into a database.
+            POST
+            A request to take the submitted data and modify data on the server as a result of user input.
+            An example would be a form post changing existing information.
 
-        DELETE
-        A request to remove information from a database.
-    *** *************** ***
+            PUT
+            A request to take submitted data and insert it into a database.
 
-    *** ************* ***
-    *** ACCESSIBILITY ***
-    *** ************* ***
+            DELETE
+            A request to remove information from a database.
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
 
-        Two ways we can do it are through adding an access key, and a tab index. 
+        *** ************* ***
+        *** ACCESSIBILITY ***
+        *** ************* ***
 
-    *** ************* ***
+            Two ways to make a webpsite more accessible are through adding an access key, and a tab index. 
 
-    *** **************************** ***
-    *** INPUT TYPES AND RESTRICTIONS ***
-    *** **************************** ***
-        There are few different ways in which we can allow users to input information on a form.
-        Each input is defined either through a tag or a combination of a tag and attribute.
-        There are a number of input methods, here is some of them:
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
 
-            _______________________________________________________________________________________
+        *** **************************** ***
+        *** INPUT TYPES AND RESTRICTIONS ***
+        *** **************************** ***
+            There are few different ways in which we can allow users to input information on a form.
+            Each input is defined either through a tag or a combination of a tag and attribute.
+            There are a number of input methods, here is some of them:
 
-            INPUT TAG  
-            Has many attributes:
-                TEXT is for a single line field.
-                EMAIL is for an email address.
-                CHECKBOX is for a field which users can check or leave unchecked.
-                SUBMIT is a submit button
-                BUTTON can be a normal button or a submit button
-                LIST is a pre-populated data list which is applied to help users automatically complete a form field.
-            ___
+                --------------------------------------------------------------------------------------
 
-            SELECT TAG
-            Is used to generate a drop-down list
-                OPTION is a value that a user can select from a drop-down list.
-            ___
+                INPUT TAG  
+                Has many attributes:
+                    TEXT is for a single line field.
+                    EMAIL is for an email address.
+                    CHECKBOX is for a field which users can check or leave unchecked.
+                    SUBMIT is a submit button
+                    BUTTON can be a normal button or a submit button
+                    LIST is a pre-populated data list which is applied to help users automatically complete a form field.
+                ___
 
-            TEXTAREA TAG
-            Is used for entering multiple lines of text
-            _______________________________________________________________________________________
+                SELECT TAG
+                Is used to generate a drop-down list
+                    OPTION is a value that a user can select from a drop-down list.
+                ___
 
-        When building input fields, a best practice is to add a label tag prior to the input field.
-        This allows a user to click on the label, the text next to the field name, and have the cursor move into the accompanying field.
+                TEXTAREA TAG
+                Is used for entering multiple lines of text
+                --------------------------------------------------------------------------------------
 
-        It is important to name any input field in case we need to refer to it to a script later or, in some cases, 
-        have this match up with a database field when processed. 
-    *** **************************** ***
+            When building input fields, a best practice is to add a label tag prior to the input field.
+            This allows a user to click on the label, the text next to the field name, and have the cursor move into the accompanying field.
 
-    *** ************************** ***
-    *** THE SIGNIFICANCE OF LABELS ***
-    *** ************************** ***
-        - Whithout the label tag, the user would have to click directly in the form field.
-        - This may sound insignificant, but consider how many users today are on mobile devices and smaller screens.
-        - Most studies estimate that 50% or more of all internet traffic is from mobile devices.
-        - The label tag also improves the experience for users utilizing screen readers.
-        - When a user focuses on a form field that has a label, the screen reader will use the associated label tag to read the name of field out loud.
-        
-        For these reasons and for ACCESSIBILITY, input tags should almost ALWAYS be accompanied by a label tag.
-    *** ************************** ***
+            It is important to name any input field in case we need to refer to it to a script later or, in some cases, 
+            have this match up with a database field when processed. 
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
+
+        *** ************************** ***
+        *** THE SIGNIFICANCE OF LABELS ***
+        *** ************************** ***
+            - Whithout the label tag, the user would have to click directly in the form field.
+            - This may sound insignificant, but consider how many users today are on mobile devices and smaller screens.
+            - Most studies estimate that 50% or more of all internet traffic is from mobile devices.
+            - The label tag also improves the experience for users utilizing screen readers.
+            - When a user focuses on a form field that has a label, the screen reader will use the associated label tag to read the name of field out loud.
+            
+            For these reasons and for ACCESSIBILITY, input tags should almost ALWAYS be accompanied by a label tag.
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
     
 
-    *** ********* ***
-    *** HTML TAGS ***
-    *** ********* ***
+        *** ********* ***
+        *** HTML TAGS ***
+        *** ********* ***
 
-        4 GROUPS:
+            4 GROUPS:
 
-            1- STRUCTURE CONTENT THROUGH MARK UP: 
-            (p, h1-h6, div, span, ul, ol, li, and table tags)
+                1- STRUCTURE CONTENT THROUGH MARK UP: 
+                (p, h1-h6, div, span, ul, ol, li, and table tags)
 
-            Table Tags             
-            Table Attributes
-            Heading Tags
-            P Tag
-            Br Tag
-            Hr Tag
-            Div Tag
-            Span Tag
-            Ul and Li Tags
-            Ol and Li Tags
-            ______________________
+                Table Tags             
+                Table Attributes
+                Heading Tags
+                P Tag
+                Br Tag
+                Hr Tag
+                Div Tag
+                Span Tag
+                Ul and Li Tags
+                Ol and Li Tags
+                ______________________
 
-            2- SEMANTIC HTML ELEMENTS:
-            (Most of it do not change the appearance of your webpages but 
-            they help define the webpages)
+                2- SEMANTIC HTML ELEMENTS:
+                (Most of it do not change the appearance of your webpages but 
+                they help define the webpages)
 
-            Header Tag
-            Nav Tag
-            Section Tag
-            Article and Aside Tags
-            Footer Tag
-            Details and Summary Tags
-            Figure Tag
-            Caption Tag
-            ______________________
+                Header Tag
+                Nav Tag
+                Section Tag
+                Article and Aside Tags
+                Footer Tag
+                Details and Summary Tags
+                Figure Tag
+                Caption Tag
+                ______________________
 
-            3- NAVIGATION ELEMENTS:
-            (Set the a tag for hyperlinks and how to set targets and bookmarks)
+                3- NAVIGATION ELEMENTS:
+                (Set the a tag for hyperlinks and how to set targets and bookmarks)
 
-            Image Links
-            The A Tag
-            Targets
-            Bookmarks
-            Relative vs. Absolute Links
-            Folder Hierarchy Navigation
-            Map
-            Area
-            ______________________
-          
-            4- FORM ELEMENTS:
-            (Know the different input types. 
-            Know how to add accessibility attributes to form fields.
-            Be able to add a submit button abd a regular button.
-            Know how and when to create a datalist.
-            Know the purpose of a fieldset.)
+                Image Links
+                The A Tag
+                Targets
+                Bookmarks
+                Relative vs. Absolute Links
+                Folder Hierarchy Navigation
+                Map
+                Area
+                ______________________
+            
+                4- FORM ELEMENTS:
+                (Know the different input types. 
+                Know how to add accessibility attributes to form fields.
+                Be able to add a submit button abd a regular button.
+                Know how and when to create a datalist.
+                Know the purpose of a fieldset.)
 
-            Action and Method Attributes
-            Submission Methods
-            Accessibility
-            Input Types and Restrictions 
-            The Significance of Labels
-            Select Tag
-            Textarea Tag
-            Button Tag
-            Output Tag
-            Option Tag
-            Datalist Tag
-            Fieldset Tag  
+                Action and Method Attributes
+                Submission Methods
+                Accessibility
+                Input Types and Restrictions 
+                The Significance of Labels
+                Select Tag
+                Textarea Tag
+                Button Tag
+                Output Tag
+                Option Tag
+                Datalist Tag
+                Fieldset Tag  
 
-    *** ********* ***
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
 
-    *** ********************* ***
-    *** VIDEO AND SOURCE TAGS ***
-    *** ********************* ***
+        *** ********************* ***
+        *** VIDEO AND SOURCE TAGS ***
+        *** ********************* ***
 
-    Most common video formats are:
+            Most common video formats are:
 
-    - MPEG (.mp4 extension): the most common which is also known as H.264 fprmat.
-    - WebM (.webm extension): is a video format that works well on low-power devices, such as netbooks and tablets.
-    - Ogg (.ogg extension): is a popular royalty-free video format.
+            - MPEG (.mp4 extension): the most common which is also known as H.264 fprmat.
+            - WebM (.webm extension): is a video format that works well on low-power devices, such as netbooks and tablets.
+            - Ogg (.ogg extension): is a popular royalty-free video format.
 
-    Many other formats are supported, so test the formats you use across multiple browsers.
+            Many other formats are supported, so test the formats you use across multiple browsers.
 
-    *** ********************* ***
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
+
+        *** ********* ***
+        *** TAB ORDER ***
+        *** ********* ***
+
+            - Tab order lays itself out pretty easily, jumping from one input field to the next. 
+            - A logical tab order scheme is necessary for users who rely on navigation through those means.
+
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
     
+        *** ************** ***
+        *** TEXT HIERARCHY ***
+        *** ************** ***
+
+            - When you are laying out content on single pages or across multiple pages, be aware of how consistent the 
+              hyerarchy is across each page. While the h1 through h6 tags do styele the text, tipically increased 
+              font-weight and font-size, the main purpose is to structure content in a logical hierarchy, 
+              so that assistive tools have a guide, a proper, a table of contents, if you will.
+              It improves organization and accessibility.
+
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
+
+        *** ************ ***
+        *** SYNTAX ERROR ***
+        *** ************ ***
+
+            - Sytax errors can include missing punctuation, incorrect letter-casing, invalid open and closing tags or 
+              brackets, or just incorrect spelling.  
+            - Browsers are prepared to run in spite of syntax errors.
+
+            A simple sintax error in will cause the remainder of your file to just fail.
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
+
+        *** ************ ***
+        *** TAG MISMATCH ***
+        *** ************ ***
+            - A situation where the closing tags do not match up properly with the opening tags. It can also refer to a tag 
+              that is not opened and closed within another single tag. There are third-part apps that can help identify 
+              mismatched tags.
+            - Spacing and indenttion are the best way to avoid tag mismatching.
+
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
+
+
+     
+    _________________________________________________________________________________________________________________
+    _________________________________________________________________________________________________________________
 -->
